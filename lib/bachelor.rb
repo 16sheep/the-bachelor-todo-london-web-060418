@@ -14,7 +14,7 @@ def get_contestant_name(data, occupation)
     season_data.each { |current_data|
     binding.pry
       if current_data["occupation"] == occupation
-        first_name = data["name"]
+        first_name = current_data["name"]
         print first_name
       end
     }  
