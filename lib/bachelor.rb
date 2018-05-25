@@ -54,5 +54,6 @@ def get_average_age_for_season(data, season)
   }
   print age
   print data[season].length
+  print age / data[season].length
   age / data[season].length
 end
