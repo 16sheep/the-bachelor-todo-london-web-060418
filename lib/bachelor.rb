@@ -50,7 +50,7 @@ end
 def get_average_age_for_season(data, season)
   age = 0
   data[season].each { |data|
-    age = age + data["age"].to_f.floor
+    age = age + data["age"].to_f.ceil
   }
   age / data[season].length
 end
