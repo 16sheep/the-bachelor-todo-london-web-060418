@@ -10,9 +10,9 @@ end
 
 def get_contestant_name(data, occupation)
   data.each {|current_season, season_data|
-   binding.pry
+   #binding.pry
     season_data.each { |current_data|
-    binding.pry
+    #binding.pry
       if current_data["occupation"] == occupation
         first_name = current_data["name"]
         print first_name
