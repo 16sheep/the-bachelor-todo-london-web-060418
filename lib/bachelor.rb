@@ -22,7 +22,17 @@ def get_contestant_name(data, occupation)
 end
 
 def count_contestants_by_hometown(data, hometown)
-  # code here
+   town_count = 0
+   data.each {|current_season, season_data|
+   #binding.pry
+    season_data.each { |current_data|
+    #binding.pry
+      if current_data["hometown"] == hometown
+        town_count = town_count + 1
+      end
+    }  
+  }
+  town_count
 end
 
 def get_occupation(data, hometown)
