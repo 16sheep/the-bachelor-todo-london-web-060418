@@ -52,5 +52,7 @@ def get_average_age_for_season(data, season)
   data[season].each { |data|
     age = age + data["age"].to_f.ceil
   }
+  print age
+  print data[season].length
   age / data[season].length
 end
